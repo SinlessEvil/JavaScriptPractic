@@ -1,6 +1,7 @@
 123
 123
 123
+<<<<<<< HEAD
 123
 
 1
@@ -31,3 +32,6 @@ sdfffd
 
 pgppgpgppg
 0
+=======
+123
+>>>>>>> parent of e58b6d2 (Update task1.php)
