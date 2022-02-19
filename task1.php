@@ -19,4 +19,21 @@
 
 		});
 	</script>
-    <!-- Задание 5: -->
+ <!-- Задание 5: Даны 4 инпута. В первый инпут вводится ФИО через пробел. По потери фокуса запишите фамилию, имя и отчество в остальные 3 инпута -->
+    <script>
+		"use strict";
+		let elems = document.querySelectorAll(".Need");
+		let elem = document.querySelector('.main input');
+		let p = document.createElement('p');
+		
+		elem.addEventListener('blur', function() {
+			console.log(elem);
+			let k = elem.value.split(' ');
+			console.log(k);
+			let count = 0;
+			for (let s of k){
+			 	elems[count].value = s;
+				count++;				
+			 }
+		});
+	</script>
