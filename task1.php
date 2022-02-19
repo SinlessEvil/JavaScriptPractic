@@ -37,3 +37,27 @@
 			 }
 		});
 	</script>
+    <!--Задание 6: Дан инпут. В него вводится ФИО через пробел. ФИО вводится с маленькой буквы. Сделайте так, чтобы по потери фокуса инпутом, введенные фамилия, имя и отчество автоматически стали записанными с большой буквы (в этом же инпуте).  -->
+    <script>
+		"use strict";
+		let elems = document.querySelectorAll(".Need");
+		let elem = document.querySelector('.main input');
+		let p = document.createElement('p');
+		
+		elem.addEventListener('blur', function() {
+			console.log(elem);
+			let k = elem.value.split(' ');
+			console.log(k);
+			let result = "";
+			for (let s of k){
+			 	result +=UppFirst(s) + " ";			
+			 }
+			elem.value = result;
+			// elem1.append(p);
+			// console.log(count);
+			function UppFirst(str){
+				if(!str) return;
+				return str[0].toUpperCase() + str.slice(1);
+			}
+		});
+	</script>
